@@ -1,11 +1,4 @@
-#                                               #
-#  _    _      _         _       _              #
-# | |  | |    | |       | |     (_)             #
-# | |  | | ___| |__   __| |_   _ _ _ __   ___   #
-# | |/\| |/ _ \ '_ \ / _` | | | | | '_ \ / _ \  #
-# \  /\  /  __/ |_) | (_| | |_| | | | | | (_) | #
-#  \/  \/ \___|_.__/ \__,_|\__,_|_|_| |_|\___/  #
-## --------------------------------------------##
+# Webduino
 
 Designed for the Samsung Artik 520 and similar devices, automates the functions of the command line using shell scripts and arduino. 
 Currently only tested with the Artik 520, but would likely work with 720 and 1020
