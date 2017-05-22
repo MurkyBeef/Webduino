@@ -43,7 +43,7 @@ main artik device connection
 Wifi Direct (P2P) Connection Setup Information
 Vi help: (https://www.cs.colostate.edu/helpdocs/vi.html)
 
-# vi /etc/wpa_supplicant/wpa_supplicant.conf
+## vi /etc/wpa_supplicant/wpa_supplicant.conf
 
 -Edit parameters to match those below: (if using another Artik Device)
 
@@ -82,7 +82,7 @@ Default gateway[192.168.1.1]
 On ARTIK:
 Test connection:
 
-# ping 192.168.1.15
+## ping 192.168.1.15
 
 # Client_Setup.txt
 Wifi Client Setup
@@ -90,11 +90,11 @@ Vi Help (https://www.cs.colostate.edu/helpdocs/vi.html)
 
 Configuring the wpa_supplicant.conf file:
 
-# cd /etc/wpa_supplicant
+## cd /etc/wpa_supplicant
 
 wpa_passphrase "WIFI_SSID" "PASSWORD_FOR_WIFI" >> wpa_supplicant.conf
 
-# vi wpa_supplicant.conf
+## vi wpa_supplicant.conf
 
 -You may want to delete the unencrypted password inside the wpa_supplicant file
 
@@ -103,7 +103,7 @@ wpa_passphrase "WIFI_SSID" "PASSWORD_FOR_WIFI" >> wpa_supplicant.conf
 ctrl_interface=/var/run/wpa_supplicant
 ctrl_interface_group=wheel
 
-# reboot
+## reboot
 
 -write open files and reset your system
 
