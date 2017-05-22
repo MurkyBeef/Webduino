@@ -1,0 +1,26 @@
+Recording Audio
+
+audio_setup()
+-Run once so that all the necessary files are properly setup. 
+------------------------------------------------------------------
+Configuration of audio.xml:
+Recording:
+
+Length: In terms of seconds, how long the python program will record audio for
+
+Channels: Used when recording audio, check compatibility before changing this setting
+
+Rate: Rate at which audio is recorded
+
+Chunk: How much data is being read
+
+Filename: name of file that is being written (must end with .wav or equivalent)
+
+Playback:
+
+Volume: x/100% currently this feature is a WIP, there is no obvious way to change volumes 
+
+Chunk: Keep it same as before for continuity
+
+Filename: Again, keep it the same unless you know what you are doing
+-------------------------------------------------------------------------------------------

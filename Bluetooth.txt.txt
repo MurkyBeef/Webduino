@@ -1,0 +1,39 @@
+Bluetooth 
+
+BT_discover.sh
+
+discovers bluetooth connectable devices and displays their MAC addresses
+
+BT_pair.sh
+
+pairs bluetooth device with artik, requires setup of bluetooth.xml
+
+bluetooth.xml
+
+<MAC_address>
+
+	-MAC address of device
+
+<Phone_MAC> 
+	
+	-MAC address of a phone
+	
+<Speaker_MAC>
+	
+	-MAC address of a portable speaker
+	
+BT_connect.sh
+
+	-Default connection program, reads from <MAC_address> tag on XML
+
+BT_connectP.sh
+
+	-Phone connection program, reads from <Phone_MAC> tag on XML
+
+BT_connectS.sh
+
+	-Speaker connection program, reads from <Speaker_MAC> tag on XML
+
+BT_test.sh
+
+	-Test connection once established

@@ -1,0 +1,5 @@
+Utility Readme
+
+Anything in the utility folder is a template, used to build functions later on, most of the stuff here was gathered from various online resources,
+i just made examples for myself so i could refer back to them easily. I thought they could be helpful to someone else so i left them in there. I am
+not responsible if some of the stuff doesn't work or is incorrect, like i said this was kind of my trial/error folder

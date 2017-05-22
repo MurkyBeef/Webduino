@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Audio_Config>
+<Recording>
+	<Length>10</Length>		<!-- Length Defined in terms of Seconds -->
+	<Channels>2</Channels>	
+	<Rate>44100</Rate>
+	<Chunk>1024</Chunk>
+	<Filename>artik_record.wav</Filename>
+</Recording>
+<Playback>
+		<Chunk>1024</Chunk>
+		<Filename>artik_record.wav</Filename>		<!-- Make Sure the filenames match, or know what you are doing if they dont -->
+</Playback>
+<General>
+	<Volume>10</Volume>  	<!-- Out of 100% -->
+	<Time>10</Time>
+	<Path>test.wav</Path>
+</General>
+</Audio_Config>

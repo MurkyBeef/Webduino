@@ -1,0 +1,8 @@
+Bluetooth Config File
+
+MAC:
+11-11-11-11-11-11-11
+BT Service Keys:
+bluetooth_######_######
+IP:
+8.8.8.8.8

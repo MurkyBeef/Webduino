@@ -1,0 +1,69 @@
+Artik Linux LAN Setup
+This setup is required in order for the LAN server function to work properly.
+----------------------------------------------------------------------------------------------
+Editing hostapd.conf  
+
+# vi /etc/hostapd/hostapd.conf
+
+-Replace existing options with the following
+
+interface=wlan0
+driver=nl80211
+ssid=NAME-OF-NETWORK
+hw_mode=g
+channel=6
+
+auth_algs=1
+wpa=2
+wpa_passphrase=PASSWORD-FOR-NETWORK
+wpa_pairwise=TKIP CCMP
+rsn_pairwise=CCMP
+
+-Make sure you scroll down completely in order to not have duplicates
+-For information on using the vi editor: (https://www.cs.colostate.edu/helpdocs/vi.html)
+
+--------------------------------------------------------------------------------------------
+Editing dnsmasq.conf
+
+# vi /etc/dnsmasq.conf
+
+-Find bind-interfaces section
+-Replace the "#bind-interfaces" with the following
+
+
+bind-interfaces
+dhcp-range=192.168.1.2,192.168.1.100
+
+-Save and close
+
+---------------------------------------------------------------------------------------------
+Editing aproute.sh OR upload aproute.sh from this package onto the artik
+
+# vi aproute.sh
+
+-Copy the following into the file
+
+sysctl net.ipv4.ip_forward=1
+iptables --flush
+iptables -t nat --flush
+iptables --delete-chain
+iptables -t nat --delete-chain
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+iptables -A FORWARD -i wlan0 -j ACCEPT
+
+-Make this file an executable (must do this either method):
+
+# chmod 777 aproute.sh
+
+----------------------------------------------------------------------------------------------
+
+For the actual activation/deactivation, you can upload the .sh files in this package and make them executable:
+
+#chmod 777 enable_wap.sh
+
+#chmod 777 disable_wap.sh
+
+OR
+
+You can use the functions in artik linux arduino file to do the same thing, it eliminates some uploading and chmoding
+

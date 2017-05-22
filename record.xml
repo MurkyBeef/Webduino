@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<General>
+	<Volume>10</Volume>  	<!-- Out of 100% -->
+	<Time>10</Time>
+	<Path>test.wav</Path>
+</General>

@@ -1,0 +1,22 @@
+Wifi Client Setup
+Vi Help (https://www.cs.colostate.edu/helpdocs/vi.html)
+
+Configuring the wpa_supplicant.conf file:
+
+# cd /etc/wpa_supplicant
+
+wpa_passphrase "WIFI_SSID" "PASSWORD_FOR_WIFI" >> wpa_supplicant.conf
+
+# vi wpa_supplicant.conf
+
+-You may want to delete the unencrypted password inside the wpa_supplicant file
+
+-Make sure that the first two lines have the following:
+
+ctrl_interface=/var/run/wpa_supplicant
+ctrl_interface_group=wheel
+
+# reboot
+
+-write open files and reset your system
+
